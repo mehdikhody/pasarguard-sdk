@@ -1,12 +1,12 @@
-# 🤝 Contributing to MarzbanSDK
+# 🤝 Contributing to PasarGuardSDK
 
-Thank you for considering contributing to **MarzbanSDK**! 🎉 We welcome all contributions, whether it's fixing bugs, adding new features, improving documentation, or suggesting ideas.
+Thank you for considering contributing to **PasarGuardSDK**! 🎉 We welcome all contributions, whether it's fixing bugs, adding new features, improving documentation, or suggesting ideas.
 
 ## 🛠 How to Contribute
 
 ### 📌 Reporting Issues
 
-If you find a bug or have a feature request, please open an [issue](https://github.com/Ilmar7786/marzban-sdk/issues) and provide:
+If you find a bug or have a feature request, please open an [issue](https://github.com/Ilmar7786/pasarguard-sdk/issues) and provide:
 
 - A clear description of the problem.
 - Steps to reproduce (if applicable).
@@ -49,8 +49,8 @@ Optional longer description
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Ilmar7786/marzban-sdk.git
-   cd marzban-sdk
+   git clone https://github.com/Ilmar7786/pasarguard-sdk.git
+   cd pasarguard-sdk
    ```
 2. Install dependencies:
    ```sh
@@ -72,6 +72,6 @@ Before merging, ensure that:
 
 If you have any questions or ideas, feel free to:
 
-- Start a discussion in [GitHub Discussions](https://github.com/Ilmar7786/marzban-sdk/discussions).
+- Start a discussion in [GitHub Discussions](https://github.com/Ilmar7786/pasarguard-sdk/discussions).
 
 🚀 **Thank you for contributing!** 🚀

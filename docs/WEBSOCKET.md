@@ -2,7 +2,7 @@
 
 ## Overview
 
-MarzbanSDK provides built-in support for real-time log streaming via WebSockets. This allows clients to receive live logs from core services and specific nodes.
+PasarGuardSDK provides built-in support for real-time log streaming via WebSockets. This allows clients to receive live logs from core services and specific nodes.
 
 ## 📌 Features
 

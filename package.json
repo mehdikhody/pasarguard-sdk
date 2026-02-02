@@ -1,8 +1,8 @@
 {
-  "name": "marzban-sdk",
+  "name": "pasarguard-sdk",
   "version": "1.5.0",
   "license": "MIT",
-  "description": "Fully typed client SDK for the Marzban API, supporting both browser and Node.js environments.",
+  "description": "Fully typed client SDK for the PasarGuard API, supporting both browser and Node.js environments.",
   "private": false,
   "author": "ilmar7786",
   "sideEffects": false,
@@ -34,13 +34,13 @@
     "lint": "eslint --fix ."
   },
   "keywords": [
-    "marzban-sdk",
-    "marzban",
-    "marzban api",
-    "marzban api client",
-    "marzban vpn",
-    "marzban vpn api",
-    "marzban vpn api client",
+    "pasarguard-sdk",
+    "pasarguard",
+    "pasarguard api",
+    "pasarguard api client",
+    "pasarguard vpn",
+    "pasarguard vpn api",
+    "pasarguard vpn api client",
     "vpn",
     "http-client",
     "api-client",
@@ -87,12 +87,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ilmar7786/marzban-sdk.git"
+    "url": "git+https://github.com/Ilmar7786/pasarguard-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/Ilmar7786/marzban-sdk/issues"
+    "url": "https://github.com/Ilmar7786/pasarguard-sdk/issues"
   },
-  "homepage": "https://github.com/Ilmar7786/marzban-sdk#readme",
+  "homepage": "https://github.com/Ilmar7786/pasarguard-sdk#readme",
   "files": [
     "dist"
   ]

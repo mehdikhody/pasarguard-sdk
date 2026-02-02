@@ -1,7 +1,7 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * MarzbanAPI
+ * PasarGuardAPI
  * Unified GUI Censorship Resistant Solution Powered by Xray
  *
  * The version of the OpenAPI document: 0.8.4

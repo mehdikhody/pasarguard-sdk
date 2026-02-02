@@ -17,14 +17,14 @@ import { setupInterceptors } from './interceptors'
 import { LogsApi } from './LogsApi'
 
 /**
- * Configuration options for initializing the MarzbanSDK client.
+ * Configuration options for initializing the PasarGuardSDK client.
  *
- * @property {string} baseUrl - The base URL of the Marzban API instance. Example: 'https://api.example.com'.
+ * @property {string} baseUrl - The base URL of the PasarGuard API instance. Example: 'https://api.example.com'.
  * @property {string} username - The username for authentication. Required for all authenticated operations.
  * @property {string} password - The password for authentication. Required for all authenticated operations.
  * @property {string} [token] - Optional JWT token for direct authorization. If provided, the SDK will use this token for requests instead of performing authentication.
  * @property {number} [retries] - Optional number of automatic retries for failed HTTP requests. Default is 3.
- * @property {boolean} [authenticateOnInit=true] - If true or omitted, the SDK will automatically perform authentication during initialization using the provided credentials. If set to false, authentication will not be performed automatically; you must call {@link MarzbanSDK.authorize} manually to obtain an access token.
+ * @property {boolean} [authenticateOnInit=true] - If true or omitted, the SDK will automatically perform authentication during initialization using the provided credentials. If set to false, authentication will not be performed automatically; you must call {@link PasarGuardSDK.authorize} manually to obtain an access token.
  */
 export interface Config {
   baseUrl: string
@@ -36,12 +36,12 @@ export interface Config {
 }
 
 /**
- * The main SDK class for interacting with the Marzban API.
+ * The main SDK class for interacting with the PasarGuard API.
  *
  * This class provides access to various API modules (e.g., Admin, Core, Node, etc.)
  * and handles authentication, request retries, and interceptor setup.
  */
-export class MarzbanSDK {
+export class PasarGuardSDK {
   private client: AxiosInstance
   private configuration: Configuration
   private authService: AuthService
@@ -92,10 +92,10 @@ export class MarzbanSDK {
   logs: LogsApi
 
   /**
-   * Instantiates the MarzbanSDK client for interacting with the Marzban API.
+   * Instantiates the PasarGuardSDK client for interacting with the PasarGuard API.
    *
    * @param {Config} config - The configuration object for the SDK.
-   * @param {string} config.baseUrl - The base URL of the Marzban API.
+   * @param {string} config.baseUrl - The base URL of the PasarGuard API.
    * @param {string} config.username - The username for authentication.
    * @param {string} config.password - The password for authentication.
    * @param {string} [config.token] - Optional JWT token for direct authorization if already authenticated.
@@ -108,14 +108,14 @@ export class MarzbanSDK {
    *
    * @example
    * // Automatic authentication (default)
-   * const sdk = new MarzbanSDK({
+   * const sdk = new PasarGuardSDK({
    *   baseUrl: 'https://api.example.com',
    *   username: 'admin',
    *   password: 'secret',
    * });
    *
    * // Manual authentication
-   * const sdk = new MarzbanSDK({
+   * const sdk = new PasarGuardSDK({
    *   baseUrl: 'https://api.example.com',
    *   username: 'admin',
    *   password: 'secret',
@@ -181,7 +181,7 @@ export class MarzbanSDK {
    *
    * @example
    * // Manual authentication with error handling
-   * const sdk = new MarzbanSDK({
+   * const sdk = new PasarGuardSDK({
    *   baseUrl: 'https://api.example.com',
    *   username: 'admin',
    *   password: 'secret',

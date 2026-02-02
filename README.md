@@ -1,22 +1,22 @@
 <div align="center">
-  <img src="./docs/logo.png" alt="MarzbanSDK" width="320px" height="320px" />
+  <img src="./docs/logo.png" alt="PasarGuardSDK" width="320px" height="320px" />
 </div>
 
-# 🚀 MarzbanSDK
+# 🚀 PasarGuardSDK
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/marzban-sdk)](https://www.npmjs.com/package/marzban-sdk/v/latest)
-[![npm downloads](https://img.shields.io/npm/dm/marzban-sdk)](https://www.npmjs.com/package/marzban-sdk)
-[![total downloads](https://img.shields.io/npm/dt/marzban-sdk)](https://www.npmjs.com/package/marzban-sdk)
-[![license](https://img.shields.io/npm/l/marzban-sdk)](https://github.com/Ilmar7786/marzban-sdk/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Ilmar7786/marzban-sdk)](https://github.com/Ilmar7786/marzban-sdk)
+[![npm version](https://img.shields.io/npm/v/pasarguard-sdk)](https://www.npmjs.com/package/pasarguard-sdk/v/latest)
+[![npm downloads](https://img.shields.io/npm/dm/pasarguard-sdk)](https://www.npmjs.com/package/pasarguard-sdk)
+[![total downloads](https://img.shields.io/npm/dt/pasarguard-sdk)](https://www.npmjs.com/package/pasarguard-sdk)
+[![license](https://img.shields.io/npm/l/pasarguard-sdk)](https://github.com/Ilmar7786/pasarguard-sdk/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Ilmar7786/pasarguard-sdk)](https://github.com/Ilmar7786/pasarguard-sdk)
 
 </div>
 
 ---
 
-> 🚧 **We're working on Marzban SDK 2.0.0 — the biggest update yet!**
+> 🚧 **We're working on PasarGuard SDK 2.0.0 — the biggest update yet!**
 >
 > This release brings fundamental improvements:
 >
@@ -26,19 +26,19 @@
 > - 📝 Configurable logger
 > - 💻 CLI tool (planned)
 >
-> 👉 Share your feedback! What features would you like to see? 👉 [Join the discussion on GitHub](https://github.com/Ilmar7786/marzban-sdk/discussions/30)
+> 👉 Share your feedback! What features would you like to see? 👉 [Join the discussion on GitHub](https://github.com/Ilmar7786/pasarguard-sdk/discussions/30)
 
 ---
 
-**MarzbanSDK** is a fully typed TypeScript client for interacting with the [Marzban](https://github.com/Gozargah/Marzban) API.  
+**PasarGuardSDK** is a fully typed TypeScript client for interacting with the [PasarGuard](https://github.com/Gozargah/PasarGuard) API.  
 It provides a clean, consistent, and developer-friendly interface — with built-in authentication, retries, and WebSocket support.
 
-Unlike some SDK generators, **MarzbanSDK does not dynamically generate or rebuild code from OpenAPI**.  
-Instead, all methods and types are **implemented directly as strongly-typed TypeScript definitions**, originally based on Marzban’s OpenAPI schema — but maintained and refined manually for better developer experience.
+Unlike some SDK generators, **PasarGuardSDK does not dynamically generate or rebuild code from OpenAPI**.  
+Instead, all methods and types are **implemented directly as strongly-typed TypeScript definitions**, originally based on PasarGuard’s OpenAPI schema — but maintained and refined manually for better developer experience.
 
 The SDK works seamlessly in **both Node.js and browser environments**.
 
-👉 [View on GitHub](https://github.com/Ilmar7786/marzban-sdk)
+👉 [View on GitHub](https://github.com/Ilmar7786/pasarguard-sdk)
 
 ---
 
@@ -66,33 +66,33 @@ The SDK works seamlessly in **both Node.js and browser environments**.
 - 🔄 **Auto Token Refresh** — Automatic session renewal on expiration.
 - 🔁 **Retry Logic** — Resilient against temporary network errors.
 - 📡 **Real-time WebSocket Logging** — Stream logs from core or nodes.
-- 📘 **OpenAPI-based Implementation** — Methods and types are derived from Marzban’s OpenAPI specification, but implemented as native TS code for stability and flexibility.
+- 📘 **OpenAPI-based Implementation** — Methods and types are derived from PasarGuard’s OpenAPI specification, but implemented as native TS code for stability and flexibility.
 
 ---
 
 ## 📦 Installation
 
-Install MarzbanSDK via npm:
+Install PasarGuardSDK via npm:
 
 ```sh
-npm install marzban-sdk
+npm install pasarguard-sdk
 ```
 
 Or using yarn:
 
 ```sh
-yarn add marzban-sdk
+yarn add pasarguard-sdk
 ```
 
 ---
 
 ## 📑 Configuration Options
 
-The `Config` object is used to initialize the MarzbanSDK instance. Below are all available options:
+The `Config` object is used to initialize the PasarGuardSDK instance. Below are all available options:
 
 | Name                 | Type    | Required | Default | Description                                                                                        |
 | -------------------- | ------- | -------- | ------- | -------------------------------------------------------------------------------------------------- |
-| `baseUrl`            | string  | Yes      | —       | The base URL of the Marzban API instance. Example: `https://api.example.com`                       |
+| `baseUrl`            | string  | Yes      | —       | The base URL of the PasarGuard API instance. Example: `https://api.example.com`                       |
 | `username`           | string  | Yes      | —       | The username for authentication.                                                                   |
 | `password`           | string  | Yes      | —       | The password for authentication.                                                                   |
 | `token`              | string  | No       | —       | Optional JWT token for direct authorization. If provided, SDK uses this token for requests.        |
@@ -103,15 +103,15 @@ The `Config` object is used to initialize the MarzbanSDK instance. Below are all
 
 ## 🔐 Authorization Control
 
-MarzbanSDK gives you full control over authentication:
+PasarGuardSDK gives you full control over authentication:
 
 - **Automatic authentication** (default): The SDK logs in as soon as you create an instance.
 - **Manual authentication**: Set `authenticateOnInit: false` to delay login and handle errors yourself.
 
 ```typescript
-import { MarzbanSDK, AuthenticationError } from 'marzban-sdk'
+import { PasarGuardSDK, AuthenticationError } from 'pasarguard-sdk'
 
-const sdk = new MarzbanSDK({
+const sdk = new PasarGuardSDK({
   baseUrl: 'https://api.example.com',
   username: 'admin',
   password: 'secret',
@@ -144,16 +144,16 @@ You can also force re-authentication at any time:
 await sdk.authorize(true) // Force a new login, even if already authenticated
 ```
 
-See [Config interface documentation](./src/MarzbanSDK.ts) for all available options.
+See [Config interface documentation](./src/PasarGuardSDK.ts) for all available options.
 
 ---
 
 ## 🚀 Quick Start
 
 ```typescript
-import { MarzbanSDK, Config } from 'marzban-sdk'
+import { PasarGuardSDK, Config } from 'pasarguard-sdk'
 
-const sdk = new MarzbanSDK({
+const sdk = new PasarGuardSDK({
   baseUrl: 'https://api.example.com',
   username: 'your-username',
   password: 'your-password',
@@ -174,11 +174,11 @@ sdk.getAuthToken().then(token => {
 
 ## 🔍 How It Works
 
-MarzbanSDK is built around a clean TypeScript architecture:
+PasarGuardSDK is built around a clean TypeScript architecture:
 
 ### 1️⃣ **Strong Typing and Validation**
 
-Every method, parameter, and response is defined using TypeScript types derived from Marzban’s OpenAPI schema.
+Every method, parameter, and response is defined using TypeScript types derived from PasarGuard’s OpenAPI schema.
 
 ### 2️⃣ **Static Implementation**
 
@@ -186,7 +186,7 @@ The SDK itself is **not generated at runtime** — all types and methods are imp
 
 ### 3️⃣ **Unified API Interface**
 
-Access all Marzban endpoints through a single, well-structured class: `MarzbanSDK`.
+Access all PasarGuard endpoints through a single, well-structured class: `PasarGuardSDK`.
 
 ### 4️⃣ **Cross-Platform Support**
 
@@ -209,7 +209,7 @@ Full API reference and usage examples are available here:
 
 ## 📡 WebSocket Support
 
-MarzbanSDK supports WebSocket for **real-time log streaming**.  
+PasarGuardSDK supports WebSocket for **real-time log streaming**.  
 You can receive logs from both the **core server** and individual **nodes**.
 
 For more details, check the [WebSocket Guide](./docs/WEBSOCKET.md).
@@ -237,7 +237,7 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE) for det
 
 ## ⭐ Support the Project
 
-If MarzbanSDK helps your project, please:
+If PasarGuardSDK helps your project, please:
 
 - ⭐ Star the repository on GitHub
 - 🐛 Report issues you encounter
@@ -248,4 +248,4 @@ Your support helps us improve the library for everyone! ❤️
 
 ---
 
-MarzbanSDK - TypeScript client for Marzban API • [GitHub Repository](https://github.com/Ilmar7786/marzban-sdk)
+PasarGuardSDK - TypeScript client for PasarGuard API • [GitHub Repository](https://github.com/Ilmar7786/pasarguard-sdk)
