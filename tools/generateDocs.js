@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
+import { fileURLToPath } from 'url'
 
 /**
  * Reads a TypeScript file and extracts JSDoc comments to generate API documentation in Markdown format.
@@ -94,8 +95,9 @@ function saveDocs(outputPath, content) {
 }
 
 // Paths
-const inputFilePath = join(new URL('.', import.meta.url).pathname, '../src/generated-sources/api.ts')
-const outputFilePath = join(new URL('.', import.meta.url).pathname, '../docs/API_DOCUMENTATION.md')
+const __dirname = fileURLToPath(new URL('.', import.meta.url))
+const inputFilePath = join(__dirname, '../src/generated-sources/api.ts')
+const outputFilePath = join(__dirname, '../docs/API_DOCUMENTATION.md')
 
 // Generate and save documentation
 const documentation = generateDocs(inputFilePath)
