@@ -87,12 +87,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ilmar7786/pasarguard-sdk.git"
+    "url": "git+https://github.com/mehdikhody/pasarguard-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/Ilmar7786/pasarguard-sdk/issues"
+    "url": "https://github.com/mehdikhody/pasarguard-sdk/issues"
   },
-  "homepage": "https://github.com/Ilmar7786/pasarguard-sdk#readme",
+  "homepage": "https://github.com/mehdikhody/pasarguard-sdk#readme",
   "files": [
     "dist"
   ]

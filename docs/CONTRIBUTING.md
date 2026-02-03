@@ -6,7 +6,7 @@ Thank you for considering contributing to **PasarGuardSDK**! 🎉 We welcome all
 
 ### 📌 Reporting Issues
 
-If you find a bug or have a feature request, please open an [issue](https://github.com/Ilmar7786/pasarguard-sdk/issues) and provide:
+If you find a bug or have a feature request, please open an [issue](https://github.com/mehdikhody/pasarguard-sdk/issues) and provide:
 
 - A clear description of the problem.
 - Steps to reproduce (if applicable).
@@ -49,7 +49,7 @@ Optional longer description
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Ilmar7786/pasarguard-sdk.git
+   git clone https://github.com/mehdikhody/pasarguard-sdk.git
    cd pasarguard-sdk
    ```
 2. Install dependencies:
@@ -72,6 +72,6 @@ Before merging, ensure that:
 
 If you have any questions or ideas, feel free to:
 
-- Start a discussion in [GitHub Discussions](https://github.com/Ilmar7786/pasarguard-sdk/discussions).
+- Start a discussion in [GitHub Discussions](https://github.com/mehdikhody/pasarguard-sdk/discussions).
 
 🚀 **Thank you for contributing!** 🚀
