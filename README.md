@@ -9,8 +9,8 @@
 [![npm version](https://img.shields.io/npm/v/pasarguard-sdk)](https://www.npmjs.com/package/pasarguard-sdk/v/latest)
 [![npm downloads](https://img.shields.io/npm/dm/pasarguard-sdk)](https://www.npmjs.com/package/pasarguard-sdk)
 [![total downloads](https://img.shields.io/npm/dt/pasarguard-sdk)](https://www.npmjs.com/package/pasarguard-sdk)
-[![license](https://img.shields.io/npm/l/pasarguard-sdk)](https://github.com/Ilmar7786/pasarguard-sdk/blob/main/LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/Ilmar7786/pasarguard-sdk)](https://github.com/Ilmar7786/pasarguard-sdk)
+[![license](https://img.shields.io/npm/l/pasarguard-sdk)](https://github.com/mehdikhody/pasarguard-sdk/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/mehdikhody/pasarguard-sdk)](https://github.com/mehdikhody/pasarguard-sdk)
 
 </div>
 
@@ -26,7 +26,7 @@
 > - 📝 Configurable logger
 > - 💻 CLI tool (planned)
 >
-> 👉 Share your feedback! What features would you like to see? 👉 [Join the discussion on GitHub](https://github.com/Ilmar7786/pasarguard-sdk/discussions/30)
+> 👉 Share your feedback! What features would you like to see? 👉 [Join the discussion on GitHub](https://github.com/mehdikhody/pasarguard-sdk/discussions/30)
 
 ---
 
@@ -38,7 +38,7 @@ Instead, all methods and types are **implemented directly as strongly-typed Type
 
 The SDK works seamlessly in **both Node.js and browser environments**.
 
-👉 [View on GitHub](https://github.com/Ilmar7786/pasarguard-sdk)
+👉 [View on GitHub](https://github.com/mehdikhody/pasarguard-sdk)
 
 ---
 
@@ -248,4 +248,4 @@ Your support helps us improve the library for everyone! ❤️
 
 ---
 
-PasarGuardSDK - TypeScript client for PasarGuard API • [GitHub Repository](https://github.com/Ilmar7786/pasarguard-sdk)
+PasarGuardSDK - TypeScript client for PasarGuard API • [GitHub Repository](https://github.com/mehdikhody/pasarguard-sdk)
