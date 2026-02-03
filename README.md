@@ -30,7 +30,7 @@
 
 ---
 
-**PasarGuardSDK** is a fully typed TypeScript client for interacting with the [PasarGuard](https://github.com/Gozargah/PasarGuard) API.  
+**PasarGuardSDK** is a fully typed TypeScript client for interacting with the [PasarGuard](https://github.com/PasarGuard/panel) API.  
 It provides a clean, consistent, and developer-friendly interface — with built-in authentication, retries, and WebSocket support.
 
 Unlike some SDK generators, **PasarGuardSDK does not dynamically generate or rebuild code from OpenAPI**.  
